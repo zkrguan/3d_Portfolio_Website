@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import { SparklesPreview } from "@/components/assets/SparklesAsset";
 import "./page.css";
 import { BentoGridAsset } from "@/components/assets/BentoAsset";
+import { TextGenerateEffectAsset } from "@/components/assets/TextGenerateAsset";
 
 export default function Home() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -27,9 +28,15 @@ export default function Home() {
       <div className={isScrolled ? "blurred" : ""}>
         <SparklesPreview />
       </div>
-      <div className="centeredComponent">
-        <BentoGridAsset />
+      <div className="container">
+        <div className="text-container">
+          <TextGenerateEffectAsset />
+        </div>
+        <div className="bento-container">
+          <BentoGridAsset />
+        </div>
       </div>
+
     </main>
   );
 }

@@ -4,14 +4,15 @@ import { SparklesCore } from "../aceternity-ui-components/sparkles";
 
 export function SparklesPreview() {
   return (
-    <div className="h-[40rem] relative w-full bg-black flex flex-col items-center justify-center overflow-hidden rounded-md">
+    // h-[60rem] this setting will affect the height of the starry pages
+    <div className="h-[75rem] relative w-full bg-black flex flex-col items-center justify-center overflow-hidden rounded-md">
       <div className="w-full absolute inset-0 h-screen">
         <SparklesCore
           id="tsparticlesfullpage"
           background="transparent"
           minSize={0.6}
           maxSize={1.4}
-          particleDensity={100}
+          particleDensity={200}
           className="w-full h-full"
           particleColor="#FFFFFF"
         />

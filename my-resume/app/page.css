@@ -14,12 +14,30 @@
     z-index: 1; /* Ensure it's above other content */
   }
   
-  .centeredComponent {
-    position: relative;
+
+  .container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: calc(100vh - 200px); /* Adjust the height as needed */
-    margin-top: 100px; /* Adjust the top margin to create space */
+    padding: 50px; /* Adjust padding as needed */
+    max-width: 1000px; /* Adjust max-width as needed */
+    margin: 0 auto; /* Center the container horizontally */
+    margin-top: 20em;
   }
   
+  .text-container, .bento-container {
+    width: 100%; /* Take up the full width of the container */
+    max-width: 800px; /* Adjust max-width as needed */
+  }
+  
+  .text-container {
+    width: 100%;
+    max-width: 800px;
+  }
+
+  .bento-container {
+    width: 100%;
+    max-width: 800px;
+    margin-top: 20em; /* Increase the margin-top to create a wider gap */
+  }
