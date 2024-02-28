@@ -14,7 +14,7 @@ export function SparklesPreview() {
           maxSize={1.4}
           particleDensity={200}
           className="w-full h-full"
-          particleColor="#FFFFFF"
+          particleColor="#0582f7"
         />
       </div>
       <h3 className="md:text-7xl text-3xl lg:text-3xl text-center text-white relative z-10 mb-20">
