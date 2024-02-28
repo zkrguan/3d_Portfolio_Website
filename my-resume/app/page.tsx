@@ -38,11 +38,11 @@ export default function Home() {
         <div className="text-container">
           {showTextEffect && <TextGenerateEffectAsset />}
         </div>
-        <div className="bento-container" style={{ paddingBottom: '10em' }}>
+        <div className="bento-container" style={{ paddingBottom: '5em' }}>
           <BentoGridAsset />
         </div>
-        <div style={{ textAlign: 'center', paddingBottom:'5em'}}>
-          <a href="https://github.com/zkrguan">Discover more about me on GitHub</a>
+        <div className="bottom-text" style={{ textAlign: 'center', paddingBottom:'10em'}}>
+          <a href="https://github.com/zkrguan">This project is done only in one day. Click me to discover more projects that I spent weeks or even months on GitHub</a>
         </div>
       </div>
     </main>
