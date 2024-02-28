@@ -79,21 +79,20 @@ return(
       </div>
       {selectedCloud === 'AWS' && (
         <div className="p-2 rounded-md">
-          <div>AWS</div>
-          <ul className="mt-2">
-            <li>Elastic Compute Cloud (EC2)</li>
-            <li>Simple Storage Service (S3)</li>
+          <ul className="mt-2 text-sm leading-relaxed">
+            <li>Elastic Compute Cloud </li>
+            <li>Simple Storage Service</li>
             <li>Dynamo DB</li>
             <li>Cognito Service</li>
+            <li>Elastic Container registry</li>
             {/* Add more AWS services */}
           </ul>
         </div>
       )}
       {selectedCloud === 'Azure' && (
         <div className="p-2 rounded-md">
-          <div>Azure</div>
-          <ul className="mt-2">
-            <li>Virtual Machines</li>
+          <ul className="mt-2 text-sm leading-relaxed">
+            <li>Azure Virtual Machines</li>
             <li>Azure SQL Database</li>
             <li>Azure Cosmos Database</li>
             <li>Azure Machine Learning Kits</li>
@@ -108,16 +107,39 @@ return(
 
 
 const Skeleton3 = () => (
-    <div className="flex flex-1 w-full h-full min-h-[10rem] rounded-xl   dark:bg-dot-white/[0.2] bg-dot-black/[0.2] [mask-image:radial-gradient(ellipse_at_center,white,transparent)]  border border-transparent dark:border-white/[0.2] bg-neutral-100 dark:bg-black">
-      inside 
+    <div className="flex flex-col w-full gap-9 max-h-[30rem] overflow-y-auto">
+      <LanguageBar language="Express" familiarityPercentage={90} />
+      <LanguageBar language="Nest" familiarityPercentage={90} />
+      <LanguageBar language=".Net Stack" familiarityPercentage={80} />
+      <LanguageBar language="OracleSQL" familiarityPercentage={95} />
+      <LanguageBar language="MongoDB" familiarityPercentage={80} />
+      <LanguageBar language="MySQL" familiarityPercentage={75} />
+      <LanguageBar language="Angular" familiarityPercentage={75} />
+      <LanguageBar language="Next" familiarityPercentage={70} />
     </div>
   );
 
-const Skeleton4 = () => (
-<div className="flex flex-1 w-full h-full min-h-[10rem] rounded-xl   dark:bg-dot-white/[0.2] bg-dot-black/[0.2] [mask-image:radial-gradient(ellipse_at_center,white,transparent)]  border border-transparent dark:border-white/[0.2] bg-neutral-100 dark:bg-black">
-    inside 
-</div>
-);
+const Skeleton4 = () => {
+    return (
+        <div className="flex flex-col w-full gap-4">
+            <div className="text-sm">
+                Learned how to dockerize the project and building CI/CD pipelines on Github.
+            </div>
+            <div className="text-sm">
+                Helped another data scientist in data cleaning and data modelling using Pandas, Scikit-Learn, and more Python Packages.
+            </div>
+            <div className="text-sm">
+                Learned how to write trigger, package, function, procedure in OracleSQL by using PL/SQL. Successfully implemented triggers in MongoDB at work.
+            </div>
+            <div className="text-sm">
+                Convinced the external stakeholder that his idea is not possible to implement within the existing time frame during coop. 
+            </div>
+            <div className="text-sm">
+                Proficient in interpreting and assessing 3rd-party API (REST/GraphQL) and webhook documentation.
+            </div>
+      </div>
+    );
+  };
 const items = [
   {
     title: "Coding Languages",
@@ -135,12 +157,12 @@ const items = [
     title: "Web Development Frameworks",
     description: "Know why, and know how.",
     header: <Skeleton3 />,
-    className: "md:col-span-1",
+    className: "md:col-span-1 p-6",
   },
   {
     title: "More than just a developer",
-    description:"Can serve as a bridge between business and tech teams",
+    description:"Can handle various tasks depending on the team needs",
     header: <Skeleton4 />,
-    className: "md:col-span-2",
+    className: "md:col-span-2 p-6",
   },
 ];
