@@ -18,13 +18,13 @@ export function SparklesPreview() {
         />
       </div>
       <h3 className="md:text-7xl text-3xl lg:text-3xl text-center text-white relative z-10 mb-20">
-        There are 2 trillion planets in this universe,
+        There are 2 trillion planets in this universe.
       </h3>
       <h3 className="md:text-7xl text-3xl lg:text-3xl text-center text-white relative z-10 mb-20">
-        and 8.1 billion human beings on this planet.
+        8.1 billion human beings are living on this planet.
       </h3>
       <h3 className="md:text-7xl text-3xl lg:text-3xl text-center text-white relative z-10 mb-20">
-        Hello and nice to meet you,stranger. My name is.
+        Hello stranger, and nice to meet you. My name is
       </h3>
       <h1 className="md:text-7xl text-3xl lg:text-6xl font-bold text-center text-white relative z-20 mb-10">
         Roger Guan 

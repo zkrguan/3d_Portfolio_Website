@@ -7,6 +7,7 @@ import { TextGenerateEffectAsset } from "@/components/assets/TextGenerateAsset";
 
 export default function Home() {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [showTextEffect, setShowTextEffect] = useState(false); // New state to control rendering of TextGenerateEffectAsset
 
   useEffect(() => {
     const handleScroll = () => {
@@ -14,6 +15,11 @@ export default function Home() {
       // You can adjust this value according to your design
       const threshold = 200; // Adjust this value as needed
       setIsScrolled(scrollPosition > threshold);
+
+      // If the user has scrolled past the threshold and TextGenerateEffectAsset is not yet shown, set showTextEffect to true
+      if (scrollPosition > threshold && !showTextEffect) {
+        setShowTextEffect(true);
+      }
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -21,7 +27,7 @@ export default function Home() {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [showTextEffect]); // Added showTextEffect as a dependency
 
   return (
     <main>
@@ -30,13 +36,15 @@ export default function Home() {
       </div>
       <div className="container">
         <div className="text-container">
-          <TextGenerateEffectAsset />
+          {showTextEffect && <TextGenerateEffectAsset />}
         </div>
-        <div className="bento-container">
+        <div className="bento-container" style={{ paddingBottom: '10em' }}>
           <BentoGridAsset />
         </div>
+        <div style={{ textAlign: 'center', paddingBottom:'5em'}}>
+          <a href="https://github.com/zkrguan">Discover more about me on GitHub</a>
+        </div>
       </div>
-
     </main>
   );
 }

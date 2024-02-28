@@ -132,7 +132,7 @@ const Skeleton4 = () => {
                 Learned how to write trigger, package, function, procedure in OracleSQL by using PL/SQL. Successfully implemented triggers in MongoDB at work.
             </div>
             <div className="text-sm">
-                Convinced the external stakeholder that his idea is not possible to implement within the existing time frame during coop. 
+                Convinced the external stakeholder that his sudden idea is not possible to implement within the existing time frame during coop. 
             </div>
             <div className="text-sm">
                 Proficient in interpreting and assessing 3rd-party API (REST/GraphQL) and webhook documentation.
@@ -148,7 +148,7 @@ const items = [
     className: "md:col-span-2 p-6",
   },
   {
-    title: "Cloud Platforms",
+    title: "Cloud Tools",
     description: "Eager to experiment",
     header: <Skeleton2 />,
     className: "md:col-span-1 p-6",
