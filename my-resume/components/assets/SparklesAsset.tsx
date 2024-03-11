@@ -18,7 +18,7 @@ export function SparklesPreview() {
         />
       </div>
       <h3 className="md:text-7xl text-3xl lg:text-3xl text-center text-white relative z-10 mb-20">
-        There are 2 trillion planets in this universe.
+        There are 2 trillion planets in this universe, and
       </h3>
       <h3 className="md:text-7xl text-3xl lg:text-3xl text-center text-white relative z-10 mb-20">
         8.1 billion human beings are living on this planet.
