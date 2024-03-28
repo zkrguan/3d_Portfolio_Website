@@ -42,7 +42,7 @@ export default function Home() {
           <BentoGridAsset />
         </div>
         <div className="bottom-text" style={{ textAlign: 'center', paddingBottom:'10em'}}>
-          <a href="https://github.com/zkrguan">This project is done only in one day. Click me to discover more projects that I spent weeks or even months on GitHub</a>
+          <a href="https://github.com/zkrguan">This project was done only in one day. Click me to discover more projects that I spent weeks or even months on GitHub</a>
         </div>
       </div>
     </main>

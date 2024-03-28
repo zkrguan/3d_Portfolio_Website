@@ -1,6 +1,8 @@
 import { cn } from "@/utils/cn";
 import React, { useState } from "react";
 import { BentoGrid, BentoGridItem } from "../aceternity-ui-components/bento-grid";
+import './bento-scroll-bar.css';
+import './progress-bar.css';
 
 export function BentoGridAsset() {
   return (
@@ -30,7 +32,7 @@ const LanguageBar: React.FC<LanguageBarProps> = ({
     return (
         <div className="language-bar">
           <div className="language-name">{language}</div>
-          <progress value={familiarityPercentage} max={100}/>
+          <progress className="progress-bar" value={familiarityPercentage} max={100}/>
         </div>
     );
   };
@@ -107,7 +109,7 @@ return(
 
 
 const Skeleton3 = () => (
-    <div className="flex flex-col w-full gap-9 max-h-[30rem] overflow-y-auto">
+    <div className="flex flex-col w-full gap-9 max-h-[30rem] overflow-y-auto scrollbar-custom">
       <LanguageBar language="Express" familiarityPercentage={90} />
       <LanguageBar language="Nest" familiarityPercentage={90} />
       <LanguageBar language=".Net Stack" familiarityPercentage={80} />
